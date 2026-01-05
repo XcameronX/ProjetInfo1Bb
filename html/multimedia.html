@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="VOTRE_NOM_ET_PRENOM">
-    <title>Multimédia</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <script src="../javascript/script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="author" content="VOTRE_NOM_ET_PRENOM" />
+    <title>Multimédia - Projet Info1Bb</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <script type="text/javascript" src="../javascript/script.js"></script>
 </head>
-<body>
-    <header id="titre_page" onclick="changerCouleurTitre()">
-        <h1>Section Multimédia</h1>
+<body onload="afficherHeure()">
+
+    <header>
+        <h1 id="titre_page">Espace Multimédia</h1>
+        <p id="affichage_heure"></p>
     </header>
 
     <nav>
-        <a href="../index.html"><button>Accueil</button></a>
-        <a href="multimedia.html"><button>Multimédia</button></a>
-        <a href="formulaire.html"><button>Contact</button></a>
-        <a href="infos.html"><button>Informations</button></a>
-        <a href="logo.html"><button>Mon Logo</button></a>
+        <a href="../index.html"><button type="button">Retour Accueil</button></a>
     </nav>
 
     <main>
-        <h2>Mes médias</h2>
+        <section>
+            <h2>Images et Photographies</h2>
+            <p>Voici une image illustrative :</p>
+            <a href="https://www.u-bourgogne.fr">
+                <img src="../media/image.jpg" alt="Lien vers l'université" width="300" />
+            </a>
+        </section>
 
-        <h3>Photo</h3>
-        <img src="../media/photo.jpg" alt="Photo personnelle" width="250" onmouseover="messageSurvol()">
+        <section>
+            <h2>Contenu Audio</h2>
+            <p>Écoutez cet extrait sonore :</p>
+            <audio controls src="../media/audio.mp3">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+        </section>
 
-        <h3>Audio</h3>
-        <audio controls>
-            <source src="../media/audio.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas l'élément audio.
-        </audio>
-
-        <h3>Vidéo</h3>
-        <video controls width="400">
-            <source src="../media/video.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas l'élément vidéo.
-        </video>
+        <section>
+            <h2>Contenu Vidéo</h2>
+            <p>Regardez cette séquence vidéo :</p>
+            <video controls width="400" src="../media/video.mp4">
+                Votre navigateur ne supporte pas l'élément vidéo.
+            </video>
+        </section>
     </main>
 
+    <hr />
     <footer>
-        <a href="../index.html">Sommaire</a> | 
-        <button onclick="window.history.back()">Retour</button> | 
-        <a href="formulaire.html"><button>Suivant</button></a>
+        <a href="../index.html">Sommaire</a> |
+        <button type="button" onclick="window.history.back()">Page précédente</button> |
+        <a href="infos.html"><button type="button">Page suivante</button></a>
     </footer>
+
 </body>
 </html>
