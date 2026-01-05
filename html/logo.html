@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="VOTRE_NOM_ET_PRENOM">
-    <title>Mon Logo</title>
+    <title>Mon Logo - Projet Info1Bb</title>
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../javascript/script.js"></script>
 </head>
-<body>
-    <header id="titre_page" onclick="changerCouleurTitre()">
-        <h1>Mon Logo</h1>
+<body onload="dessinerLogo()">
+    <header>
+        <h1 id="titre_page">Construction du Logo</h1>
     </header>
 
     <nav>
@@ -21,17 +21,28 @@
     </nav>
 
     <main>
-        <h2>Logo sur canevas</h2>
-        <p>Clique sur le bouton ci-dessous pour dessiner un logo simple sur le canevas.</p>
+        <canvas id="monLogo" width="200" height="200" style="border:1px solid #000;">
+            Votre navigateur ne supporte pas le canevas.
+        </canvas>
 
-        <canvas id="monLogo" width="300" height="200" style="border:1px solid #000000;"></canvas><br><br>
-        <button onclick="calculerCanevas()">Dessiner le logo</button>
+        <section>
+            <h2>Explication technique</h2>
+            <p>
+                Ce logo a été réalisé avec l'élément HTML5 <strong>Canvas</strong>.
+                Le dessin est généré par une fonction JavaScript nommée <code>dessinerLogo()</code>.
+                J'ai d'abord défini le contexte en '2d', puis j'ai utilisé la méthode <code>fillRect</code>
+                pour créer un rectangle bleu, suivi de <code>beginPath</code> et <code>arc</code>
+                pour tracer un cercle jaune par-dessus.
+            </p>
+        </section>
     </main>
 
+    <hr>
     <footer>
-        <a href="../index.html">Sommaire</a> | 
-        <button onclick="window.history.back()">Retour</button> | 
-        <a href="../index.html"><button>Suivant</button></a>
+        <a href="../index.html">Retour au Sommaire</a> |
+        <button onclick="window.history.back()">Page précédente</button> |
+        <a href="formulaire.html"><button type="button">Page suivante</button></a>
     </footer>
+
 </body>
 </html>
