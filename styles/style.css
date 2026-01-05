@@ -1,0 +1,70 @@
+/* styles/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #dddddd;
+    padding: 10px;
+    text-align: center;
+}
+
+nav button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: 1px solid #888888;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #eeeeee;
+}
+
+main {
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 300px;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer button {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+img {
+    border: 1px solid #cccccc;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+form input, form select, form textarea {
+    margin-top: 5px;
+}
