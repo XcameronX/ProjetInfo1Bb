@@ -58,4 +58,24 @@ function calculerCanevas() {
 // 6. Message de survol
 function messageSurvol() {
     console.log("L'utilisateur survole un élément.");
+
+                // 7. Fonction pour dessiner le logo (Canevas)
+function dessinerLogo() {
+    // Récupération de l'élément par son ID
+    var canva = document.getElementById("monLogo");
+    if (canva && canva.getContext) {
+        var ctx = canva.getContext("2d");
+
+        // Dessin d'un rectangle bleu
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 100, 100);
+
+        // Dessin d'un cercle jaune
+        ctx.beginPath();
+        ctx.arc(100, 100, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+        ctx.stroke();
+    }
+}
 }
