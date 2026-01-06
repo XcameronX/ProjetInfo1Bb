@@ -58,6 +58,7 @@ function calculerCanevas() {
 // 6. Message de survol
 function messageSurvol() {
     console.log("L'utilisateur survole un élément.");
+    }
 
                 // 7. Fonction pour dessiner le logo (Canevas)
 function dessinerLogo() {
